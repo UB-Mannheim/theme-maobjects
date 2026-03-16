@@ -737,3 +737,42 @@ ul {
         }
     }
 }
+
+// Lightgallery styling:
+.lightgallery .lg-container{
+    // Make backdrop transparent:
+    &.lg-inline .lg-backdrop {
+        opacity: 0% !important;
+        // !important because draging the image too much triggers some js script adding inline element styles...
+    }
+
+    .lg-backdrop {
+        opacity: 75% !important;
+    }
+
+    .lg-thumb-outer {
+        background-color: unset;
+    }
+
+    picture.lg-img-wrap::before{
+        display: none;
+    }
+
+    // Buttons in Uni Ma style:
+    .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+        border-color: $uni-blau;
+    }
+
+    button.lg-next, button.lg-prev {
+        @include button_blau;
+        border-radius: .3125rem;
+
+        &:hover {
+            @include button_blau_hover;
+        }
+    }
+
+    .lg-toolbar .lg-icon:hover {
+        color: $uni-blau;
+    }
+}
