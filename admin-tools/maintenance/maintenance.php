@@ -1,7 +1,4 @@
-<title><?php echo __('Maintenance Mode'); ?></title>
-<?php
-echo head(array('title' => $title, 'bodyclass' => 'maintenance-mode'));
-?>
+<?php echo head(array('title' => "Site Under Maintenance", 'bodyclass' => 'maintenance-mode')); ?>
 
 <div id="maintenance_outer">
 	<div id="maintenance_middle">
@@ -12,6 +9,5 @@ echo head(array('title' => $title, 'bodyclass' => 'maintenance-mode'));
 		</div>
 	</div>
 </div>
-
 
 <?php echo foot(); ?>
